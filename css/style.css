@@ -25,12 +25,22 @@ h1, h2, h3, .serif {
 header {
     padding: 2rem 5%;
 }
+
+/* Logo specific changes */
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    font-style: italic;
-    letter-spacing: -2px;
+    display: inline-block; /* ensure it behaves as a container for image and link */
+    margin-right: 1.5rem;
 }
+
+/* Updated styling for the new logo image */
+.logo img {
+    height: 60px; /* Sensible height matching previous visual feel */
+    width: auto; /* maintain aspect ratio */
+    display: block; /* prevent inline spacing issues */
+    max-width: 100%; /* prevent overflow on small screens */
+}
+
+/* (Previous text-logo specific styles for .logo have been removed) */
 
 /* Hero Section */
 .hero {
